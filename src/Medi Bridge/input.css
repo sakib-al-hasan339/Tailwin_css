@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+
+@theme {
+
+} 
+
+@layer components{
+  body{
+    @apply font-normal
+  }
+  button {
+    @apply cursor-pointer
+  }
+  .box {
+    @apply col-span-3 border border-purple-700 rounded-md px-5 py-3 flex flex-col items-center
+  }
+
+  .title{
+    @apply text-center w-[590px] mx-auto font-normal
+  }
+  .title_text {
+    @apply sm:text-[40px] lg:text-[50px] 
+  }
+  .title_dec{
+    @apply text-[#5F6564] sm:text-[15px] lg:text-[17px] 
+  }
+  .addtion{
+    @apply border border-[#9195953D] flex items-center justify-between rounded-2xl py-4 px-5 text-[22px] font-bold hover:bg-[#177d6e] hover:text-white transition duration-300 ease-linear
+  }
+  .service_box{
+    @apply sm:col-span-6 md:col-span-4 lg:col-span-3 col-span-12 text-center  border border-gray-300 p-10 rounded-2xl hover:-translate-y-1.5 hover:shadow-sm ease-linear transition duration-300
+  }
+  .benner_logo{
+    @apply hover:scale-110 ease-linear transition duration-300
+  }
+  .item{
+    @apply bg-[#9195953D] rounded-2xl hover:bg-[#177d6e] transition duration-300
+  }
+  .ourTeam_box{
+    @apply sm:col-span-6 md:col-span-4 col-span-12 lg:p-7 p-5 mx-auto hover:-translate-y-1.5  ease-linear transition duration-300
+  }
+  .footer_menue{
+    @apply transition duration-300 transform hover:translate-x-1
+  }
+  .footer_menueText{
+    @apply text-[#5F6564] text-[14px] hover:text-[#177d6e]
+  }
+  .bookNowButton{
+    @apply border border-[#177d6e] rounded-3xl px-4 py-2 text-[#177d6e] transition duration-300 hover:bg-[#177d6e] hover:text-white
+  }
+}
+
